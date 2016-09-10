@@ -14,7 +14,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-GH_PAGES_SOURCES = source Makefile
+GH_PAGES_SOURCES = docs/source docs/Makefile
 
 
 .PHONY: help
@@ -230,6 +230,7 @@ dummy:
 .PHONY: gh-pages
 gh-pages:
 	git checkout gh-pages
+	cd ..
 	rm -rf build _sources _static
 	git checkout master $(GH_PAGES_SOURCES)
 	git reset HEAD
