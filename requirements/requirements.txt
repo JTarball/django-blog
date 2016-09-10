@@ -7,13 +7,14 @@ whitenoise
 tox
 ipython
 Werkzeug
+djangorestframework
 django_extensions
 django_dynamic_fixture
 django_nose
+pytest
 pytest-django
 pytest-xdist
 pytest-coverage
 nose-progressive
 responses>=0.4.0
-
 sphinx_rtd_theme
