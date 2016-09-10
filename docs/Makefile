@@ -237,5 +237,6 @@ gh-pages:
 	mv -fv build/html/* ../
 	touch ../.nojekyll
 	cd ..
+	@echo "Add all files to gh-pages branch"
 	git add .
 	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout master
