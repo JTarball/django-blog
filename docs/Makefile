@@ -230,6 +230,8 @@ dummy:
 .PHONY: gh-pages
 gh-pages:
 	git checkout gh-pages
+	@echo "Removing old source and static files"
+	rm -rf ../_sources ../_static
 	git checkout master Makefile source
 	make html
 	mv -fv build/html/* ../
