@@ -6,3 +6,4 @@ __pycache__/
 # Ignore built doc folders
 _sources/
 _static/
+docs/build/
