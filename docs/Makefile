@@ -231,7 +231,8 @@ dummy:
 gh-pages:
 	git checkout gh-pages
 	git checkout master Makefile source
-	
+	make html
+	git checkout master
 
 
 	#cd ..
