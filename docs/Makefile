@@ -232,7 +232,8 @@ gh-pages:
 	git checkout gh-pages
 	git checkout master Makefile source
 	make html
-	git checkout master
+	mv -fv build/html/* ../
+	#git checkout master
 
 
 	#cd ..
