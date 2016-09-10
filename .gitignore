@@ -3,3 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Ignore built doc folders
+_sources/
+_static/
