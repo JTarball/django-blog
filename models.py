@@ -18,7 +18,7 @@ from django.db.models import signals
 from django.utils.translation import ugettext as _
 from django.template.defaultfilters import slugify
 
-from blog.utils import markup, toTimeAgo
+from utils import markup, toTimeAgo
 from search.utils import add_model_to_redis, dump_redis, flush_redis
 # Get instance of logger
 logger = logging.getLogger('project_logger')
