@@ -236,4 +236,6 @@ gh-pages:
 	make html
 	mv -fv build/html/* ../
 	touch ../.nojekyll
-	git commit -a -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout master
+	cd ..
+	git add .
+	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout master
