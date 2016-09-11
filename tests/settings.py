@@ -13,6 +13,8 @@ SECRET_KEY = 'local'
 
 ROOT_URLCONF = 'tests.urls'
 
+AUTH_USER_MODEL = 'tests.AccountsUser'
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -51,6 +53,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django-blog',
     'tests',
 )
 
