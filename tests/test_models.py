@@ -20,7 +20,6 @@ from blog.utils import markup
 from tests.models import AccountsUser
 
 
-
 class BlogTests(APITestCase):
 
     def setUp(self):

@@ -46,16 +46,27 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
-INSTALLED_APPS = (
+DJANGO_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'django-blog',
+)
+
+THIRD_PATH_APPS = (
+    'taggit',
+    'rest_framework',
+    'rest_framework.authtoken',
+)
+
+LOCAL_APPS = (
+    'blog',
     'tests',
 )
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_PATH_APPS + LOCAL_APPS
 
 PASSWORD_HASHERS = (
     'django.contrib.auth.hashers.MD5PasswordHasher',
