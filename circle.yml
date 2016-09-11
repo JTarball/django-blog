@@ -19,6 +19,6 @@ test:
       - mkdir -p circle-junit/django
       - py.test --junitxml=circle-junit/django/junit.xml tests/
       - mkdir -p $CIRCLE_TEST_REPORTS/django
-      - mv app/circle-junit/django $CIRCLE_TEST_REPORTS/
+      - mv circle-junit/django $CIRCLE_TEST_REPORTS/
 
 
