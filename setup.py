@@ -12,7 +12,7 @@ setup(
     author_email="james.tarball@gmail.com",
     url="https://github.com/JTarball/django-blog",
     license="BSD",
-    packages=["django-blog"],
+    packages=["blog"],
     zip_safe=False,
     include_package_data=True,
     classifiers=[

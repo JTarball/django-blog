@@ -19,7 +19,7 @@ from django.utils.translation import ugettext as _
 from django.template.defaultfilters import slugify
 
 from utils import markup, toTimeAgo
-from search.utils import add_model_to_redis, dump_redis, flush_redis
+#from search.utils import add_model_to_redis, dump_redis, flush_redis
 # Get instance of logger
 logger = logging.getLogger('project_logger')
 
@@ -63,9 +63,9 @@ class Post(models.Model):
     # =====================
     # For Redis Search Only
     # =====================
-    searchable_fields = ['title', 'tags']
+    #searchable_fields = ['title', 'tags']
     # These are fields for the model which are saved to Redis. for fast access (stop gap for noSQL database)
-    redis_stored_fields = ['title', 'slug', 'get_absolute_url']
+    #redis_stored_fields = ['title', 'slug', 'get_absolute_url']
     # ======================
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     updated_at = models.DateTimeField(auto_now=True, editable=False)
@@ -106,11 +106,11 @@ class Post(models.Model):
 ##############################################################################
 # Comment - type of comment (warning/ issue / comment)
 ##############################################################################
-def reindex_redis_search(sender, instance, **kwargs):
-    """ Callback function which recalculates what is searchable in redis from sender. """
-    logger.info("Re-creating Search Autocomplete Index ...")
-    flush_redis()
-    [add_model_to_redis(model) for model in Post.objects.all()]
-    dump_redis()
+# def reindex_redis_search(sender, instance, **kwargs):
+#     """ Callback function which recalculates what is searchable in redis from sender. """
+#     logger.info("Re-creating Search Autocomplete Index ...")
+#     flush_redis()
+#     [add_model_to_redis(model) for model in Post.objects.all()]
+#     dump_redis()
 
-signals.post_save.connect(reindex_redis_search, sender=Post, dispatch_uid="add_post_tags")
+# signals.post_save.connect(reindex_redis_search, sender=Post, dispatch_uid="add_post_tags")
