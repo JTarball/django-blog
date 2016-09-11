@@ -14,9 +14,10 @@ from django_dynamic_fixture import G
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
 
-from accounts.models import AccountsUser
 from blog.models import Post
 from blog.serializers import PostSerializer
+
+from tests.models import AccountsUser
 
 logger = logging.getLogger('test_logger')
 

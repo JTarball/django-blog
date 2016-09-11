@@ -1,4 +1,6 @@
 import os
+import sys
+
 from django.conf import settings
 
 from tests import settings as test_settings

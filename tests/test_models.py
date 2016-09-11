@@ -14,9 +14,11 @@ from django_dynamic_fixture import G
 from django_dynamic_fixture.ddf import BadDataError
 from rest_framework.test import APITestCase
 
-from accounts.models import AccountsUser
 from blog.models import Post
 from blog.utils import markup
+
+from tests.models import AccountsUser
+
 
 
 class BlogTests(APITestCase):
