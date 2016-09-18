@@ -1,5 +1,8 @@
+#!/usr/bin/env python
+"""
+    Configuration for py.test (in place of manage.py)
+"""
 import os
-import sys
 
 from django.conf import settings
 

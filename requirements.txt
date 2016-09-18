@@ -1,7 +1,13 @@
 Django==1.8.6
 djangorestframework
+python-dateutil
+markdown2
+beautifulsoup4
+Pygments
+
 
 # Django test supports
+# ====================
 tox
 django_dynamic_fixture
 django_nose
@@ -12,10 +18,3 @@ pytest-coverage
 nose-progressive
 responses>=0.4.0
 sphinx_rtd_theme
-
-# Specific django-blog dependencies
-python-dateutil
-django-taggit
-markdown2
-Pygments
-beautifulsoup4
