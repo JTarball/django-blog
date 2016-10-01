@@ -10,6 +10,10 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+    Features <features>
+    Form Mixins <form>
+    Other Mixins <other>
+
 
 `View our Changelog <changelog.html>`_
 
