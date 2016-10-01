@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Changelog &mdash; django-blog 0.1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="django-blog 0.1.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-blog
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Changelog</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">django-blog</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Changelog</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/changelog.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a href="#id1"><span class="problematic" id="id2">:release:`1.9.0 &lt;2016-5-31&gt;`</span></a></li>
+<li><a href="#id3"><span class="problematic" id="id4">:bug:`208 major`</span></a> Fixed errors from combining certain access mixins.</li>
+<li><a href="#id5"><span class="problematic" id="id6">:bug:`196 major`</span></a> Refactor how users without permissions are handled.</li>
+<li><a href="#id7"><span class="problematic" id="id8">:bug:`181 major`</span></a> Fixed redirect loops based on user permissions.</li>
+<li><a href="#id9"><span class="problematic" id="id10">:bug:`161 major`</span></a> Fixed redirect loop for users without proper groups for <code class="docutils literal"><span class="pre">MultipleGroupRequiredMixin</span></code> and <code class="docutils literal"><span class="pre">GroupRequiredMixin</span></code>.</li>
+<li><a href="#id11"><span class="problematic" id="id12">:support:`209`</span></a> Fixed link to Django documentation for <code class="docutils literal"><span class="pre">user_passes_test</span></code> decorator.</li>
+<li><a href="#id13"><span class="problematic" id="id14">:feature:`203`</span></a> Use Django&#8217;s supplied version of <code class="docutils literal"><span class="pre">six</span></code> to remove an external dependency.</li>
+<li><a href="#id15"><span class="problematic" id="id16">:support:`202`</span></a> Fixed typo in <code class="docutils literal"><span class="pre">PermissionsRequiredMixin</span></code> and <code class="docutils literal"><span class="pre">MultiplePermissionsRequiredMixin</span></code>.</li>
+<li><a href="#id17"><span class="problematic" id="id18">:support:`201`</span></a> Fixed typo in <code class="docutils literal"><span class="pre">SuccessURLRedirectListMixin</span></code>.</li>
+<li><a href="#id19"><span class="problematic" id="id20">:support:`192`</span></a> Added example for <code class="docutils literal"><span class="pre">OrderableListView</span></code>.</li>
+<li><a href="#id21"><span class="problematic" id="id22">:release:`1.8.1 &lt;2015-7-12&gt;`</span></a></li>
+<li><a href="#id23"><span class="problematic" id="id24">:bug:`176`</span></a> Only check time delta for authenticated users in <span class="xref std std-ref">RecentLoginRequiredMixin</span>.</li>
+<li><a href="#id25"><span class="problematic" id="id26">:bug:`-`</span></a> Changed <span class="xref std std-ref">JsonRequestResponseMixin</span> docs to not use <cite>ugettext_lazy</cite>.</li>
+<li><a href="#id27"><span class="problematic" id="id28">:bug:`-`</span></a> Updated tests to include Python 3.2.</li>
+<li><a href="#id29"><span class="problematic" id="id30">:bug:`185`</span></a> Removed <cite>u</cite> prefixes to allow Python 3.2 support.</li>
+<li><a href="#id31"><span class="problematic" id="id32">:support:`-`</span></a> Added note to docs about Python and Django versions used in tests.</li>
+<li><a href="#id33"><span class="problematic" id="id34">:bug:`-`</span></a> Fix small issue in docs for :ref:JsonResponseMixin. The accepted kwarg for the render_to_response method is status not status_code.</li>
+<li><a href="#id35"><span class="problematic" id="id36">:release:`1.8.0 &lt;2015-04-16&gt;`</span></a></li>
+<li><a href="#id37"><span class="problematic" id="id38">:support:`145`</span></a> Allow custom exceptions to be raised by all AccessMixins.</li>
+<li><a href="#id39"><span class="problematic" id="id40">:feature:`171`</span></a> New <code class="docutils literal"><span class="pre">SSLRequiredMixin</span></code>. Redirect http -&gt; https.</li>
+<li><a href="#id41"><span class="problematic" id="id42">:feature:`138`</span></a> New <span class="xref std std-ref">RecentLoginRequiredMixin</span> to require user sessions to have a given freshness.</li>
+<li><a href="#id43"><span class="problematic" id="id44">:bug:`164 major`</span></a> Use <cite>resolve_url</cite> to handle <cite>LOGIN_REDIRECT_URL`s in `settings.py</cite> that are just URL names.</li>
+<li><a href="#id45"><span class="problematic" id="id46">:bug:`130 major`</span></a> New attribute on <span class="xref std std-ref">JSONResponseMixin</span> to allow setting a custom JSON encoder class.</li>
+<li><a href="#id47"><span class="problematic" id="id48">:bug:`131 major`</span></a> New attribute on <span class="xref std std-ref">LoginRequiredMixin</span> so it&#8217;s possible to redirect unauthenticated users while
+using <code class="docutils literal"><span class="pre">AccessMixin</span></code>-derived mixins instead of throwing an exception.</li>
+<li><a href="#id49"><span class="problematic" id="id50">:release:`1.4.0 &lt;2014-03-04&gt;`</span></a></li>
+<li><a href="#id51"><span class="problematic" id="id52">:support:`129`</span></a> Split <code class="docutils literal"><span class="pre">views.py</span></code> out into multiple files since it was approaching 1000 LoC.</li>
+<li><a href="#id53"><span class="problematic" id="id54">:feature:`119`</span></a> <span class="xref std std-ref">SetHeadlineMixin</span> now accepts <code class="docutils literal"><span class="pre">headline</span></code> with <code class="docutils literal"><span class="pre">ugettext_lazy()</span></code>-wrapped strings.</li>
+<li><a href="#id55"><span class="problematic" id="id56">:bug:`94 major`</span></a> Fixed a bug where <span class="xref std std-ref">JSONResponseMixin</span> would override the <code class="docutils literal"><span class="pre">content_type</span></code> of Django&#8217;s <code class="docutils literal"><span class="pre">TemplateView</span></code> in Django 1.6.</li>
+<li><a href="#id57"><span class="problematic" id="id58">:bug:`- major`</span></a> Fixed bug in <span class="xref std std-ref">PermissionRequiredMixin</span> where if <code class="docutils literal"><span class="pre">PermissionRequiredMixin.no_permissions_fail</span></code> returned a false-y value, the user lacking the permission would pass instead of being denied access.</li>
+<li><a href="#id59"><span class="problematic" id="id60">:support:`73`</span></a> Added doc for how to contribute.</li>
+<li><a href="#id61"><span class="problematic" id="id62">:feature:`120`</span></a> Added <span class="xref std std-ref">MessageMixin</span> to allow easier access to Django&#8217;s <code class="docutils literal"><span class="pre">contrib.messages</span></code> messages. <span class="xref std std-ref">FormValidMessageMixin</span> and <span class="xref std std-ref">FormInvalidMessageMixin</span> were updated to use it.</li>
+<li><a href="#id63"><span class="problematic" id="id64">:bug:`98 major`</span></a> Fixed bug in <span class="xref std std-ref">CanonicalSlugDetailMixin</span> to allow it to use custom URL kwargs.</li>
+<li><a href="#id65"><span class="problematic" id="id66">:bug:`105 major`</span></a> Fixed bug in <span class="xref std std-ref">GroupRequiredMixin</span> where superusers were blocked by lack of group memberships.</li>
+<li><a href="#id67"><span class="problematic" id="id68">:bug:`106 major`</span></a> Fixed bug in <span class="xref std std-ref">GroupRequiredMixin</span> which now correctly checks for group membership against a list.</li>
+<li><a href="#id69"><span class="problematic" id="id70">:feature:`102`</span></a> Added new <span class="xref std std-ref">StaticContextMixin</span> mixin which lets you pass in <code class="docutils literal"><span class="pre">static_context</span></code> as a property of the view.</li>
+<li><a href="#id71"><span class="problematic" id="id72">:feature:`89`</span></a> Added new <span class="xref std std-ref">AnonymousRequiredMixin</span> which redirects authenticated users to another view.</li>
+<li><a href="#id73"><span class="problematic" id="id74">:feature:`104`</span></a> Added new <span class="xref std std-ref">AllVerbsMixin</span> which allows a single method to response to all HTTP verbs.</li>
+<li><a href="#id75"><span class="problematic" id="id76">:bug:`- major`</span></a> Provided <code class="docutils literal"><span class="pre">JSONRequestResponseMixin</span></code> as a mirror of <span class="xref std std-ref">JsonRequestResponseMixin</span> because we&#8217;re not PHP.</li>
+<li><a href="#id77"><span class="problematic" id="id78">:feature:`107`</span></a> <span class="xref std std-ref">FormValidMessageMixin</span>, <span class="xref std std-ref">FormInvalidMessageMixin</span>, and <span class="xref std std-ref">FormMessagesMixin</span> all allow <code class="docutils literal"><span class="pre">ugettext_lazy</span></code>-wrapped strings.</li>
+<li><a href="#id79"><span class="problematic" id="id80">:feature:`67`</span></a> Extended <span class="xref std std-ref">PermissionRequiredMixin</span> and <span class="xref std std-ref">MultiplePermissionsRequiredMixin</span> to accept django-guardian-style custom/object permissions.</li>
+<li><a href="#id81"><span class="problematic" id="id82">:release:`1.3.1 &lt;2014-01-04&gt;`</span></a></li>
+<li><a href="#id83"><span class="problematic" id="id84">:bug:`95`</span></a> Removed accidentally-added breakpoint.</li>
+<li><a href="#id85"><span class="problematic" id="id86">:support:`96 backported`</span></a> Added <code class="docutils literal"><span class="pre">build/</span></code> to <code class="docutils literal"><span class="pre">.gitignore</span></code></li>
+<li><a href="#id87"><span class="problematic" id="id88">:release:`1.3.0 &lt;2014-01-03&gt;`</span></a></li>
+<li><a href="#id89"><span class="problematic" id="id90">:support:`59`</span></a> Removed <code class="docutils literal"><span class="pre">CreateAndRedirectToEditView</span></code> mixin which was marked for deprecation and removal since 1.0.0.</li>
+<li><a href="#id91"><span class="problematic" id="id92">:feature:`51`</span></a> Added <span class="xref std std-ref">JsonRequestResponseMixin</span> which attempts to parse requests as JSON.</li>
+<li><a href="#id93"><span class="problematic" id="id94">:feature:`61`</span></a> Added <span class="xref std std-ref">CanonicalSlugDetailMixin</span> mixin which allows for the specification of a canonical slug on a <code class="docutils literal"><span class="pre">DetailView</span></code> to help with SEO by redirecting on non-canonical requests.</li>
+<li><a href="#id95"><span class="problematic" id="id96">:feature:`76`</span></a> Added <span class="xref std std-ref">UserPassesTestMixin</span> mixin to replicate the behavior of Django&#8217;s <code class="docutils literal"><span class="pre">&#64;user_passes_test</span></code> decorator.</li>
+<li><a href="#id97"><span class="problematic" id="id98">:bug:`- major`</span></a> Some fixes for <span class="xref std std-ref">CanonicalSlugDetailMixin</span>.</li>
+<li><a href="#id99"><span class="problematic" id="id100">:feature:`92`</span></a> <code class="docutils literal"><span class="pre">AccessMixin</span></code> now has a runtime-overridable <code class="docutils literal"><span class="pre">login_url</span></code> attribute.</li>
+<li><a href="#id101"><span class="problematic" id="id102">:bug:`- major`</span></a> Fixed problem with <span class="xref std std-ref">GroupRequiredMixin</span> that made it not actually work.</li>
+<li><a href="#id103"><span class="problematic" id="id104">:support:`-`</span></a> All tests pass for Django versions 1.4 through 1.6 and Python versions 2.6, 2.7, and 3.3 (Django 1.4 and 1.5 not tested with Python 3.3).</li>
+<li><a href="#id105"><span class="problematic" id="id106">:release:`1.2.2 &lt;2013-08-07&gt;`</span></a></li>
+<li><a href="#id107"><span class="problematic" id="id108">:support:`-`</span></a> Uses <code class="docutils literal"><span class="pre">six.string_types</span></code> instead of explicitly relying on <code class="docutils literal"><span class="pre">str</span></code> and <code class="docutils literal"><span class="pre">unicode</span></code> types.</li>
+<li><a href="#id109"><span class="problematic" id="id110">:release:`1.2.1 &lt;2013-07-28&gt;`</span></a></li>
+<li><a href="#id111"><span class="problematic" id="id112">:bug:`-`</span></a> Fix to allow <code class="docutils literal"><span class="pre">reverse_lazy</span></code> to work for all <code class="docutils literal"><span class="pre">AccessMixin</span></code>-derived mixins.</li>
+<li><a href="#id113"><span class="problematic" id="id114">:release:`1.2.0 &lt;2013-07-27&gt;`</span></a></li>
+<li><a href="#id115"><span class="problematic" id="id116">:feature:`57`</span></a> <span class="xref std std-ref">FormValidMessageMixin</span> which provides a <code class="docutils literal"><span class="pre">messages</span></code> message when the processed form is valid.</li>
+<li><a href="#id117"><span class="problematic" id="id118">:feature:`-`</span></a> <span class="xref std std-ref">FormInvalidMessageMixin</span> which provides a <code class="docutils literal"><span class="pre">messages</span></code> message when the processed form is invalid.</li>
+<li><a href="#id119"><span class="problematic" id="id120">:feature:`-`</span></a> <span class="xref std std-ref">FormMessagesMixin</span> which provides the functionality of both of the above mixins.</li>
+<li><a href="#id121"><span class="problematic" id="id122">:feature:`-`</span></a> <span class="xref std std-ref">GroupRequiredMixin</span> which is a new access-level mixin which requires that a user be part of a specified group to access a view.</li>
+<li><a href="#id123"><span class="problematic" id="id124">:release:`1.1.0 &lt;2013-07-18&gt;`</span></a></li>
+<li><a href="#id125"><span class="problematic" id="id126">:bug:`52 major`</span></a> <span class="xref std std-ref">JSONResponseMixin</span> <code class="docutils literal"><span class="pre">.render_json_response</span></code> method updated to accept a status code.</li>
+<li><a href="#id127"><span class="problematic" id="id128">:bug:`43 major`</span></a> <span class="xref std std-ref">JSONResponseMixin</span> added <code class="docutils literal"><span class="pre">json_dumps_kwargs</span></code> attribute &amp; get method to pass args to the JSON encoder.</li>
+<li><a href="#id129"><span class="problematic" id="id130">:feature:`45`</span></a> New <span class="xref std std-ref">OrderableListMixin</span> allows ordering of list views by GET params.</li>
+<li><a href="#id131"><span class="problematic" id="id132">:support:`-`</span></a> Tests updated to test against latest stable Django release (1.5.1)</li>
+<li><a href="#id133"><span class="problematic" id="id134">:support:`-`</span></a> Small fixes and additions to documentation.</li>
+<li><a href="#id135"><span class="problematic" id="id136">:release:`1.0.0 &lt;2013-02-28&gt;`</span></a></li>
+<li><a href="#id137"><span class="problematic" id="id138">:feature:`-`</span></a> New &#8216;abstract&#8217; <code class="docutils literal"><span class="pre">AccessMixin</span></code> which provides overridable <code class="docutils literal"><span class="pre">get_login_url</span></code> and <code class="docutils literal"><span class="pre">get_redirect_field_name</span></code> methods for all access-based mixins.</li>
+<li><a href="#id139"><span class="problematic" id="id140">:feature:`32`</span></a> Rewritten <span class="xref std std-ref">LoginRequiredMixin</span> which provides same customization as other access mixins with <code class="docutils literal"><span class="pre">login_url</span></code>, <code class="docutils literal"><span class="pre">raise_exception</span></code> &amp; <code class="docutils literal"><span class="pre">redirect_field_name</span></code>.</li>
+<li><a href="#id141"><span class="problematic" id="id142">:feature:`33`</span></a> New <span class="xref std std-ref">PrefetchRelatedMixin</span>. Works the same as <span class="xref std std-ref">SelectRelatedMixin</span> but uses Django&#8217;s <code class="docutils literal"><span class="pre">prefetch_related</span></code> method.</li>
+<li><a href="#id143"><span class="problematic" id="id144">:support:`-`</span></a> <code class="docutils literal"><span class="pre">CreateAndRedirectToEditView</span></code> is marked for deprecation.</li>
+<li><a href="#id145"><span class="problematic" id="id146">:bug:`- major`</span></a> <span class="xref std std-ref">PermissionRequiredMixin</span> no longer requires dot syntax for permission names.</li>
+<li><a href="#id147"><span class="problematic" id="id148">:support:`-`</span></a> Marked package as supporting 2.6 thru 3.3 (from rafales).</li>
+<li><a href="#id149"><span class="problematic" id="id150">:support:`-`</span></a> Fixes to documentation.</li>
+<li><a href="#id151"><span class="problematic" id="id152">:support:`-`</span></a> Tests to cover new additions and changes.</li>
+<li><a href="#id153"><span class="problematic" id="id154">:release:`0.2.3 &lt;2013-02-22&gt;`</span></a></li>
+<li><a href="#id155"><span class="problematic" id="id156">:support:`30 backported`</span></a> Tests for all mixins (from rafales).</li>
+<li><a href="#id157"><span class="problematic" id="id158">:feature:`26 backported`</span></a> New <span class="xref std std-ref">CsrfExemptMixin</span> for marking views as being CSRF exempt (from jarcoal).</li>
+<li><a href="#id159"><span class="problematic" id="id160">:support:`- backported`</span></a> Some documentation updates and a spelling error correction (from shabda).</li>
+<li><a href="#id161"><span class="problematic" id="id162">:bug:`-`</span></a> <span class="xref std std-ref">SuccessURLRedirectListMixin</span> raises <code class="docutils literal"><span class="pre">ImproperlyConfigured</span></code> if no <code class="docutils literal"><span class="pre">success_list_url</span></code> attribute is supplied (from kennethlove).</li>
+<li><a href="#id163"><span class="problematic" id="id164">:release:`0.2.2 &lt;2013-01-21&gt;`</span></a></li>
+<li><a href="#id165"><span class="problematic" id="id166">:bug:`25`</span></a> Try importing the built-in <code class="docutils literal"><span class="pre">json</span></code> module first, drop back to Django if necessary.</li>
+<li><a href="#id167"><span class="problematic" id="id168">:support:`- backported`</span></a> Django 1.5 compatibility.</li>
+<li><a href="#id169"><span class="problematic" id="id170">:release:`0.2.1 &lt;2012-12-10&gt;`</span></a></li>
+<li><a href="#id171"><span class="problematic" id="id172">:bug:`21 major`</span></a> Fixed signature of <span class="xref std std-ref">UserFormKwargsMixin</span> <code class="docutils literal"><span class="pre">.get_form_kwargs</span></code></li>
+<li><a href="#id173"><span class="problematic" id="id174">:feature:`22`</span></a> Updated <span class="xref std std-ref">JSONResponseMixin</span> to work with non-ASCII characters and other datatypes (such as datetimes)</li>
+<li><a href="#id175"><span class="problematic" id="id176">:bug:`- major`</span></a> Fixed all mixins that have <code class="docutils literal"><span class="pre">raise_exception</span></code> as an argument to properly raise a <code class="docutils literal"><span class="pre">PermissionDenied</span></code> exception to allow for custom 403s.</li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, James Tarball.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
