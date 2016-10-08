@@ -1,7 +1,7 @@
 """
 
-    blog.urls
-    =========
+    django_blog.urls
+    ================
 
 """
 from django.conf.urls import url

@@ -1,6 +1,6 @@
 """
-    blog.models
-    ===========
+    django_blog.models
+    ==================
 
     Models file for a basic Blog App
 

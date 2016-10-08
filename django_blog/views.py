@@ -1,6 +1,6 @@
 '''
-    blog.views
-    ==========
+    django_blog.views
+    =================
     Note: As Django is only used as a backend there are no
            template based views. All views are ajax views
            returning json objects of models.
@@ -11,7 +11,7 @@ from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.decorators import list_route
 
-from blog.permissions import IsAdminOrReadOnly
+from django_blog.permissions import IsAdminOrReadOnly
 
 from .models import Post
 from .serializers import PostSerializer

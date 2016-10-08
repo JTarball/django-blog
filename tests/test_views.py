@@ -1,6 +1,6 @@
 """
-    blog.test_views.py
-    ==================
+    django_blog.test_views.py
+    =========================
 
     Test Views for Blog App
 
@@ -14,8 +14,8 @@ from django_dynamic_fixture import G
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
 
-from blog.models import Post
-from blog.serializers import PostSerializer
+from django_blog.models import Post
+from django_blog.serializers import PostSerializer
 
 from tests.models import AccountsUser
 

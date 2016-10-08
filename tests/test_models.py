@@ -1,6 +1,6 @@
 """
-    blog.test_models.py
-    ==================
+    django_blog.test_models.py
+    ==========================
 
     Test Models for Blog App
 
@@ -14,8 +14,8 @@ from django_dynamic_fixture import G
 from django_dynamic_fixture.ddf import BadDataError
 from rest_framework.test import APITestCase
 
-from blog.models import Post
-from blog.utils import markup
+from django_blog.models import Post
+from django_blog.utils import markup
 
 from tests.models import AccountsUser
 

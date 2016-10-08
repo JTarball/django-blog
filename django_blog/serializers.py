@@ -1,6 +1,6 @@
 """
-    blog.serializers
-    ================
+    django_blog.serializers
+    =======================
 
     Serializers file for a basic Blog App
 

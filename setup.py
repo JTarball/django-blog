@@ -1,6 +1,6 @@
 from setuptools import setup
 
-import blog
+import django_blog
 
 setup(
     name="django-blog",
@@ -12,7 +12,7 @@ setup(
     author_email="james.tarball@gmail.com",
     url="https://github.com/JTarball/django-blog",
     license="Not open source",
-    packages=["blog"],
+    packages=["django_blog"],
     zip_safe=False,
     include_package_data=True,
     classifiers=[

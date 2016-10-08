@@ -1,6 +1,6 @@
 '''
-    blog.permissions
-    ===================
+    django_blog.permissions
+    =======================
 
     Blog Custom Permissions for REST API
 '''

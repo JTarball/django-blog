@@ -1,6 +1,6 @@
 '''
-    blog.utils
-    ==========
+    django_blog.utils
+    =================
 
     FUTURE: Consider maybe moving functions to an django app 'common'
             so the functions can be used by multiple apps.

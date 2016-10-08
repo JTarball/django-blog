@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-    blog.admin
+    django_blog.admin
     ==========
 
     Admin Functionality for Blog App
@@ -8,7 +8,7 @@
 """
 from django.contrib import admin
 
-from blog.models import Post
+from django_blog.models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
