@@ -62,7 +62,7 @@ THIRD_PATH_APPS = (
 )
 
 LOCAL_APPS = (
-    'blog',
+    'django_blog',
     'tests',
 )
 
