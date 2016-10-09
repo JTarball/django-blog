@@ -63,6 +63,7 @@ THIRD_PATH_APPS = (
 
 LOCAL_APPS = (
     'django_blog',
+    'tests',
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PATH_APPS + LOCAL_APPS
