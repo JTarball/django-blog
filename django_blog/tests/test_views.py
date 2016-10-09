@@ -17,7 +17,7 @@ from rest_framework.test import APIClient, APITestCase
 from django_blog.models import Post
 from django_blog.serializers import PostSerializer
 
-from django_blog.tests.models import AccountsUser
+from tests.models import AccountsUser
 
 logger = logging.getLogger('test_logger')
 

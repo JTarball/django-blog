@@ -17,7 +17,7 @@ from rest_framework.test import APITestCase
 from django_blog.models import Post
 from django_blog.utils import markup
 
-from django_blog.tests.models import AccountsUser
+from tests.models import AccountsUser
 
 
 class BlogTests(APITestCase):

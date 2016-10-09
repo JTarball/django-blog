@@ -11,9 +11,9 @@ USE_TZ = True
 
 SECRET_KEY = 'local'
 
-ROOT_URLCONF = 'django_blog.tests.urls'
+ROOT_URLCONF = 'tests.urls'
 
-AUTH_USER_MODEL = 'django_blog.tests.AccountsUser'
+AUTH_USER_MODEL = 'tests.AccountsUser'
 
 DATABASES = {
     'default': {
