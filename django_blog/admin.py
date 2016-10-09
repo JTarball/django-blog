@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
     django_blog.admin
-    =================
+    ==========
 
     Admin Functionality for Blog App
 
